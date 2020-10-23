@@ -1,0 +1,21 @@
+using System;
+  namespace Number {
+    class Mathematics {
+      static void Main() {
+        Console.WriteLine("Choose a number (d>0): ");
+        double d = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("The number has chosen: " + d);
+        if (d<0) {
+          Console.WriteLine("Our code will not work. Please, choose another value. Remember that d should not be less than 0");
+        }
+        else {
+          double s = Math.Ceiling(d);
+          Console.WriteLine("The ceiling of d is: " + s);
+          double square_root = Math.Sqrt(s);
+          Console.WriteLine("The square root of s is: " + square_root);
+
+        }
+
+      }
+    }
+  }
